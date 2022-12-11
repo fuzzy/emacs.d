@@ -1,0 +1,6 @@
+FROM alpine:latest
+
+RUN apk update
+RUN apk add emacs-nox git
+
+ENTRYPOINT [ "emacs", "-nw" ]

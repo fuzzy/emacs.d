@@ -1,0 +1,56 @@
+;; base packages
+(use-package better-defaults
+  :straight t)
+(use-package yasnippet
+  :straight t
+  :config (yas-global-mode 1))
+(use-package auto-complete
+  :straight t
+  :config (ac-config-default))
+(use-package neotree
+  :straight t)
+(use-package wttrin
+  :straight t)
+(use-package arduino-mode
+  :straight t)
+(use-package arduino-cli-mode
+  :straight t)
+;;(use-package cedet
+;;  :straight t)
+
+;; powerline setup
+(use-package powerline
+  :straight t
+  :config
+  (powerline-center-theme)
+  (setq powerline-arrow-shape 'arrow))
+
+
+;; jinja2-mode
+(use-package jinja2-mode
+  :straight t)
+
+;; ;; theme setup
+;; (use-package badger-theme
+;;   :straight t
+;;   :ensure t
+;;   :config
+;;   (load-theme 'badger t))
+
+
+;; ;; dash setup
+;; (use-package dash
+;;   :straight t
+;;   :config (global-dash-fontify-mode))
+
+
+;; ;; transient setup
+;; (use-package transient
+;;   :straight t)
+
+
+;; ;; with-editor setup
+;; (use-package with-editor
+;;   :straight t)
+
+(provide 'init-packages)
