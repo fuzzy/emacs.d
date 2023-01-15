@@ -12,23 +12,8 @@
 (require 'init-magit)
 (require 'init-golang)
 (require 'init-python)
-
-;;;(require 'init-packages)
-;;;(require 'init-dash)
-;;;(require 'init-transient)
-;;;(require 'init-with-editor)
-;;;(require 'init-magit)
-;;;(require 'init-helm)
-;;;(require 'init-org)
-;;;(require 'init-company)
-;;;(require 'init-lsp-mode)
-;;;(require 'init-markups)
-;;;(require 'init-automation)
-;;;(require 'init-programming)
-;;;
-;;;
-;;;
-
+(require 'init-terraform)
+(require 'init-orgmode)
 ;; ;; below here is extra stuff like this
 ;; (custom-set-variables
 ;;  ;; custom-set-variables was added by Custom.
