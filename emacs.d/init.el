@@ -14,6 +14,8 @@
 (require 'init-python)
 (require 'init-terraform)
 (require 'init-orgmode)
+(require 'init-vlang)
+(require 'init-dlang)
 ;; ;; below here is extra stuff like this
 ;; (custom-set-variables
 ;;  ;; custom-set-variables was added by Custom.
