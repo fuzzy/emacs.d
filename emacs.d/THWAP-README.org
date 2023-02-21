@@ -1,0 +1,39 @@
+* T.H.W.A.P. Emacs Documentation
+
+This emacs configuration is configurable via commenting out knobs in `.emacs.d/init.el`.
+
+** Configuration `"Layers"`
+
+** Configuration Keybinding Cheat Sheet
+
+NOTE: All keybindings are prefixed with `C-t` and this is sometimes referred to as the `thwap-map`.
+NOTE: Not all keybindinds listed here are custom. Where appropriate I included default keybindings for
+      a given layer's workflow.
+
+| Layer        | Keybinding  | Action                             | Description                                                       |
+|--------------+-------------+------------------------------------+-------------------------------------------------------------------|
+| Core         | C-t c       | comment-or-uncomment-region        | Comment highlighted region                                        |
+| Core         | C-t <up>    | windmove-up                        | Move window up                                                    |
+| Core         | C-t <down>  | windmove-down                      | Guess what this does                                              |
+| Core         | C-t <left>  | windmove-left                      | This too!                                                         |
+| Core         | C-t <right> | windmove-right                     | This one is tricky                                                |
+|--------------+-------------+------------------------------------+-------------------------------------------------------------------|
+| Misc         | C-t C-i     | neotree-toggle                     | Toggle NeoTree window                                             |
+| Misc         | C-t C-w     | wttrin                             | Show ascii weather in a buffer                                    |
+|--------------+-------------+------------------------------------+-------------------------------------------------------------------|
+| Magit        | C-t g s     | magit-status                       | Run `git status` on the repo of the current buffer                |
+|--------------+-------------+------------------------------------+-------------------------------------------------------------------|
+| Org          | C-c c t     | org-capture                        | Standard task template capture                                    |
+| Org          | C-c c T     | org-capture                        | Tickler task template capture                                     |
+| Org          | C-c C-w     | org-refile                         | File the task into it's appropriate home                          |
+| Org          | C-c C-c     | org-set-tags-command               | When on a headline, add tag to said headline                      |
+| Org          | C-c C-c     | org-ctrl-c-ctrl-c                  | When on a src block, update it's contents (Useful for org-kanban) |
+| Org          | C-c C-t     | org-todo                           | Set / Cycle the TODO keyword                                      |
+| Org          | C-c C-s     | org-schedule                       | Set a SCHEDULE timestamp on a task                                |
+| Org          | C-c C-d     | org-deadline                       | Set a DEADLINE timestamp on a task                                |
+| Org-Mind-Map | C-t C-m m   | org-mind-map-write                 | Write mind map file (needs graphviz installed)                    |
+| Org-Mind-Map | C-t C-m c   | org-mind-map-write-current-tree    | What it says on the tin                                           |
+| Org-Pomodoro | C-t C-p p   | org-pomodoro                       | Clock in when on a task                                           |
+| Org-Kanban   | C-t C-o C-s | org-kanban/initialize-at-beginning | Initialize kanban table at the top of the buffer                  |
+| Org-Kanban   | C-t C-o C-e | org-kanban/initialize-at-end       | Initialize kanban table at the bottom of the buffer               |
+| Org-Kanban   | C-t C-o C-h | org-kanban/initialize-here         | Initialize kanban table at the current location in buffer         |
